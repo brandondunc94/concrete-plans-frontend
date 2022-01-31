@@ -1,1 +1,78 @@
-<p>navbar works!</p>
+<!--<nav *ngIf="visible" class="navbar navbar-dark navbar-expand-lg navbar-custom">
+    APP LOGO GOES HERE
+        <a class="navbar-brand" href="/dashboard/">
+        <img class="rounded img-fluid" src="" width="50" height="auto">
+    </a>
+    <h4 class='m-0'>Concrete Plans</h4>
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarNavDropdown" class="navbar-collapse collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown mr-2 mb-1 mt-1">
+                <a class="dropdown-toggle nav-link nav-league" data-toggle="dropdown" aria-expanded="false">
+                    <img class="mr-2" src="" width="auto" height="25" />
+                    <span>Hangouts</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a href="" class="dropdown-item">Find Hangout</a>
+                    <a href="" class="dropdown-item">Create Hangout</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown mr-2 mb-1 mt-1">
+                <a class="dropdown-toggle nav-link nav-account" data-toggle="dropdown" aria-expanded="false">
+                    <img class="mr-2" src="" width="25" height="auto" />
+                    <span>Account</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" disabled href=''>My Account</a>
+                    <a class="dropdown-item" disabled href=''>About</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>-->
+<nav id="sidebar">
+    <div class="p-4 pt-5">
+        <a href=''>Logo Goes Here</a>
+        <ul class="list-unstyled components mb-5 mt-5">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Hangouts</a>
+            <ul class="collapse list-unstyled ml-2" id="homeSubmenu">
+            <li>
+                <a href="#">Find Hangout</a>
+            </li>
+            <li>
+                <a href="#">Create Hangout</a>
+            </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Portfolio</a>
+        </li>
+        <li>
+            <a href="" href="#accountSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Account</a>
+            <ul class="collapse list-unstyled ml-2" id="accountSubmenu">
+            <li>
+                <a href="#">My Account</a>
+            </li>
+            <li>
+                <a href="#">Logout</a>
+            </li>
+            </ul>
+        </li>
+        </ul>
+        <div class="footer">
+        <p>
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script>Concrete Plans<i class="icon-heart" aria-hidden="true"></i>
+        </p>
+        </div>
+    </div>
+</nav>
+
