@@ -36,7 +36,7 @@ export class AuthService {
     return this.http.post<any>(`${environment.api_url}api-token-auth/`, user).toPromise().then(response => {
       localStorage.setItem('access_token', response.token);
       localStorage.setItem('username', user.username);
-      this.router.navigate(['dashboard/']);
+      this.router.navigate(['home/']);
     }).catch(error =>{
         return error;
     })
